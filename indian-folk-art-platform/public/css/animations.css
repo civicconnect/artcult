@@ -12,12 +12,13 @@
     50% { transform: translateY(-20px); }
 }
 
-/* Floating around animation for decorative elements */
+/* Floating around animation for decorative elements - Enhanced for Indian motifs */
 @keyframes floatAround {
-    0% { transform: translate(0px, 0px) rotate(0deg); }
-    33% { transform: translate(30px, -30px) rotate(120deg); }
-    66% { transform: translate(-20px, 20px) rotate(240deg); }
-    100% { transform: translate(0px, 0px) rotate(360deg); }
+    0% { transform: translate(0px, 0px) rotate(0deg) scale(1); }
+    25% { transform: translate(25px, -25px) rotate(90deg) scale(1.1); }
+    50% { transform: translate(-15px, 15px) rotate(180deg) scale(0.9); }
+    75% { transform: translate(20px, -10px) rotate(270deg) scale(1.05); }
+    100% { transform: translate(0px, 0px) rotate(360deg) scale(1); }
 }
 
 /* Slide in from left */
@@ -197,6 +198,75 @@
     70% { transform: scale(1); }
 }
 
+/* Traditional Indian Rangoli Pattern Animation */
+@keyframes rangoli {
+    0% { 
+        transform: rotate(0deg) scale(1);
+        filter: hue-rotate(0deg);
+    }
+    25% { 
+        transform: rotate(90deg) scale(1.1);
+        filter: hue-rotate(90deg);
+    }
+    50% { 
+        transform: rotate(180deg) scale(0.9);
+        filter: hue-rotate(180deg);
+    }
+    75% { 
+        transform: rotate(270deg) scale(1.05);
+        filter: hue-rotate(270deg);
+    }
+    100% { 
+        transform: rotate(360deg) scale(1);
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* Mandala Expanding Animation */
+@keyframes mandalaExpand {
+    0% { 
+        transform: scale(0.8) rotate(0deg);
+        opacity: 0.5;
+    }
+    50% { 
+        transform: scale(1.2) rotate(180deg);
+        opacity: 1;
+    }
+    100% { 
+        transform: scale(1) rotate(360deg);
+        opacity: 0.7;
+    }
+}
+
+/* Lotus Blooming Animation */
+@keyframes lotusBlooming {
+    0% { 
+        transform: scale(0.3) rotate(-45deg);
+        opacity: 0.3;
+    }
+    30% { 
+        transform: scale(0.7) rotate(0deg);
+        opacity: 0.7;
+    }
+    60% { 
+        transform: scale(1.1) rotate(15deg);
+        opacity: 1;
+    }
+    100% { 
+        transform: scale(1) rotate(0deg);
+        opacity: 0.8;
+    }
+}
+
+/* Peacock Feather Sway Animation */
+@keyframes peacockSway {
+    0% { transform: rotate(-5deg) translateY(0px); }
+    25% { transform: rotate(5deg) translateY(-10px); }
+    50% { transform: rotate(-3deg) translateY(-5px); }
+    75% { transform: rotate(3deg) translateY(-8px); }
+    100% { transform: rotate(-5deg) translateY(0px); }
+}
+
 /* ===== ANIMATION UTILITY CLASSES ===== */
 
 /* Entrance animations */
@@ -252,6 +322,22 @@
 .animate-gradient {
     background-size: 200% 200%;
     animation: gradientShift 3s ease infinite;
+}
+
+.animate-rangoli {
+    animation: rangoli 8s ease-in-out infinite;
+}
+
+.animate-mandala {
+    animation: mandalaExpand 6s ease-in-out infinite;
+}
+
+.animate-lotus {
+    animation: lotusBlooming 4s ease-in-out infinite;
+}
+
+.animate-peacock {
+    animation: peacockSway 3s ease-in-out infinite;
 }
 
 /* Hover animations */
