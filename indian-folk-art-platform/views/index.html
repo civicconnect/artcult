@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kala Sanskriti - Preserving Indian Folk Art Heritage</title>
+    <meta name="description" content="Discover, learn, and connect with traditional Indian folk artists. Experience Warli, Pithora, Madhubani, and more.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Kalam:wght@300;400;700&family=Noto+Sans+Devanagari:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/animations.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="mandala-loader">
+                <div class="mandala-circle"></div>
+                <div class="mandala-circle"></div>
+                <div class="mandala-circle"></div>
+            </div>
+            <p class="loading-text">कला संस्कृति</p>
+            <p class="loading-subtitle">Loading Heritage...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="/images/logo.svg" alt="Kala Sanskriti" class="nav-logo">
+                <span class="brand-text">
+                    <span class="brand-name">Kala Sanskriti</span>
+                    <span class="brand-tagline">कला संस्कृति</span>
+                </span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" data-section="home">Home</a>
+                <a href="#discover" class="nav-link" data-section="discover">Discover</a>
+                <a href="#artists" class="nav-link" data-section="artists">Artists</a>
+                <a href="#marketplace" class="nav-link" data-section="marketplace">Marketplace</a>
+                <a href="#learn" class="nav-link" data-section="learn">Learn</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="btn-icon search-toggle" id="search-toggle">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="btn-primary" id="login-btn">Login</button>
+                <button class="btn-secondary" id="register-btn">Join Us</button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Search Bar -->
+        <div class="search-bar" id="search-bar">
+            <div class="search-container">
+                <input type="text" placeholder="Search artists, artforms, or products..." class="search-input">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg">
+            <div class="hero-pattern"></div>
+            <div class="floating-elements">
+                <div class="float-element" style="--delay: 0s; --duration: 8s;">🪔</div>
+                <div class="float-element" style="--delay: 2s; --duration: 10s;">🎨</div>
+                <div class="float-element" style="--delay: 4s; --duration: 12s;">🪷</div>
+                <div class="float-element" style="--delay: 6s; --duration: 9s;">🎭</div>
+                <div class="float-element" style="--delay: 1s; --duration: 11s;">🕉️</div>
+                <div class="float-element" style="--delay: 3s; --duration: 13s;">🐘</div>
+                <div class="float-element" style="--delay: 5s; --duration: 14s;">🦚</div>
+                <div class="float-element" style="--delay: 7s; --duration: 15s;">🌺</div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Reviving</span>
+                    <span class="title-line highlight">Indian Folk Art</span>
+                    <span class="title-line">Heritage</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Connect with master artists, learn traditional techniques, and preserve 
+                    centuries-old artforms like Warli, Madhubani, and Pithora for future generations.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn-hero-primary" id="explore-btn">
+                        <span>Explore Art Forms</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn-hero-secondary" id="become-artist-btn">
+                        <span>Become an Artist</span>
+                        <i class="fas fa-palette"></i>
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Artists</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Art Forms</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Learners</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="art-showcase">
+                    <div class="art-card warli">
+                        <div class="art-preview"></div>
+                        <span class="art-name">Warli</span>
+                    </div>
+                    <div class="art-card madhubani">
+                        <div class="art-preview"></div>
+                        <span class="art-name">Madhubani</span>
+                    </div>
+                    <div class="art-card pithora">
+                        <div class="art-preview"></div>
+                        <span class="art-name">Pithora</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Art Forms Discovery Section -->
+    <section id="discover" class="discovery-section">
+        <div class="container">
+                    <div class="section-header">
+            <h2 class="section-title">Discover Traditional Art Forms</h2>
+            <p class="section-subtitle">भारत की समृद्ध लोक कला परंपराओं का अन्वेषण करें<br>Explore the rich tapestry of Indian folk art traditions</p>
+        </div>
+            
+            <div class="art-forms-grid">
+                <div class="art-form-card" data-artform="warli">
+                    <div class="card-image">
+                        <div class="warli-pattern"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Warli Art</h3>
+                        <p>Ancient tribal art from Maharashtra featuring geometric patterns and nature motifs</p>
+                        <div class="card-stats">
+                            <span><i class="fas fa-users"></i> 120+ Artists</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Maharashtra</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="art-form-card" data-artform="madhubani">
+                    <div class="card-image">
+                        <div class="madhubani-pattern"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Madhubani Painting</h3>
+                        <p>Vibrant folk art from Bihar known for intricate designs and mythological themes</p>
+                        <div class="card-stats">
+                            <span><i class="fas fa-users"></i> 95+ Artists</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Bihar</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="art-form-card" data-artform="pithora">
+                    <div class="card-image">
+                        <div class="pithora-pattern"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Pithora Painting</h3>
+                        <p>Ceremonial wall paintings from Gujarat celebrating life and prosperity</p>
+                        <div class="card-stats">
+                            <span><i class="fas fa-users"></i> 75+ Artists</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Gujarat</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="art-form-card" data-artform="kalamkari">
+                    <div class="card-image">
+                        <div class="kalamkari-pattern"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Kalamkari</h3>
+                        <p>Hand-painted textile art from Andhra Pradesh with natural dyes</p>
+                        <div class="card-stats">
+                            <span><i class="fas fa-users"></i> 60+ Artists</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Andhra Pradesh</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Selection Modal -->
+    <div id="location-modal" class="modal">
+        <div class="modal-content location-modal">
+            <div class="modal-header">
+                <h2>Choose Your Region</h2>
+                <p>Discover local artists and art forms in your area</p>
+                <button class="modal-close" id="location-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="region-grid">
+                    <div class="region-card" data-region="north">
+                        <div class="region-icon">🏔️</div>
+                        <h3>North India</h3>
+                        <p>Delhi, Punjab, Haryana, Rajasthan</p>
+                    </div>
+                    <div class="region-card" data-region="south">
+                        <div class="region-icon">🌴</div>
+                        <h3>South India</h3>
+                        <p>Karnataka, Tamil Nadu, Kerala, Andhra Pradesh</p>
+                    </div>
+                    <div class="region-card" data-region="east">
+                        <div class="region-icon">🌾</div>
+                        <h3>East India</h3>
+                        <p>West Bengal, Bihar, Odisha, Jharkhand</p>
+                    </div>
+                    <div class="region-card" data-region="west">
+                        <div class="region-icon">🏜️</div>
+                        <h3>West India</h3>
+                        <p>Maharashtra, Gujarat, Goa, Rajasthan</p>
+                    </div>
+                    <div class="region-card" data-region="central">
+                        <div class="region-icon">🏛️</div>
+                        <h3>Central India</h3>
+                        <p>Madhya Pradesh, Chhattisgarh, Uttar Pradesh</p>
+                    </div>
+                    <div class="region-card" data-region="northeast">
+                        <div class="region-icon">🦋</div>
+                        <h3>Northeast India</h3>
+                        <p>Assam, Manipur, Meghalaya, Mizoram</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Category Selection Modal -->
+    <div id="category-modal" class="modal">
+        <div class="modal-content category-modal">
+            <div class="modal-header">
+                <h2>What interests you?</h2>
+                <p>Select categories to personalize your experience</p>
+                <button class="modal-close" id="category-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="category-grid">
+                    <div class="category-card" data-category="music">
+                        <div class="category-icon">🎵</div>
+                        <h3>Folk Music</h3>
+                        <p>Traditional songs, instruments, and performances</p>
+                    </div>
+                    <div class="category-card" data-category="dance">
+                        <div class="category-icon">💃</div>
+                        <h3>Folk Dance</h3>
+                        <p>Classical and regional dance forms</p>
+                    </div>
+                    <div class="category-card" data-category="painting">
+                        <div class="category-icon">🎨</div>
+                        <h3>Painting & Art</h3>
+                        <p>Traditional paintings and visual arts</p>
+                    </div>
+                    <div class="category-card" data-category="crafts">
+                        <div class="category-icon">🏺</div>
+                        <h3>Handicrafts</h3>
+                        <p>Pottery, weaving, and handmade crafts</p>
+                    </div>
+                    <div class="category-card" data-category="textiles">
+                        <div class="category-icon">🧵</div>
+                        <h3>Textiles</h3>
+                        <p>Traditional fabrics and embroidery</p>
+                    </div>
+                    <div class="category-card" data-category="sculpture">
+                        <div class="category-icon">🗿</div>
+                        <h3>Sculpture</h3>
+                        <p>Stone, wood, and metal sculptures</p>
+                    </div>
+                </div>
+                <div class="category-actions">
+                    <button class="btn-primary" id="continue-to-artists">Continue to Artists</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Auth Modals -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content auth-modal">
+            <!-- Login Form -->
+            <div id="login-form" class="auth-form active">
+                <div class="modal-header">
+                    <h2>Welcome Back</h2>
+                    <p>Sign in to your account</p>
+                    <button class="modal-close" id="auth-close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="loginEmail">Email</label>
+                            <input type="email" id="loginEmail" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Password</label>
+                            <input type="password" id="loginPassword" name="password" required>
+                        </div>
+                        <button type="submit" class="btn-primary full-width">Sign In</button>
+                    </form>
+                    <div class="auth-footer">
+                        <p>Don't have an account? <a href="#" id="show-register">Sign up</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Register Form -->
+            <div id="register-form" class="auth-form">
+                <div class="modal-header">
+                    <h2>Join Kala Sanskriti</h2>
+                    <p>Create your account</p>
+                    <button class="modal-close" id="auth-close-2">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form id="registerForm">
+                        <div class="form-group">
+                            <label for="registerName">Full Name</label>
+                            <input type="text" id="registerName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="registerEmail">Email</label>
+                            <input type="email" id="registerEmail" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="registerPassword">Password</label>
+                            <input type="password" id="registerPassword" name="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="registerRole">I am a</label>
+                            <select id="registerRole" name="role" required>
+                                <option value="">Select role</option>
+                                <option value="user">Art Enthusiast</option>
+                                <option value="artist">Folk Artist</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-primary full-width">Create Account</button>
+                    </form>
+                    <div class="auth-footer">
+                        <p>Already have an account? <a href="#" id="show-login">Sign in</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Artists Section -->
+    <section id="artists" class="artists-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Artists</h2>
+                <p class="section-subtitle">Meet master artisans preserving traditional techniques</p>
+            </div>
+            <div class="artists-grid" id="artists-grid">
+                <!-- Artists will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketplace Section -->
+    <section id="marketplace" class="marketplace-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Artisan Marketplace</h2>
+                <p class="section-subtitle">Authentic handcrafted pieces directly from artists</p>
+            </div>
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="/images/logo.svg" alt="Kala Sanskriti" class="footer-logo">
+                        <span class="footer-brand-text">Kala Sanskriti</span>
+                    </div>
+                    <p class="footer-description">
+                        Preserving and promoting India's rich folk art heritage through digital innovation.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="#discover">Art Forms</a></li>
+                        <li><a href="#artists">Artists</a></li>
+                        <li><a href="#marketplace">Marketplace</a></li>
+                        <li><a href="#learn">Learn</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Guidelines</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kala Sanskriti. All rights reserved. | भारत की सांस्कृतिक विरासत को संजोते हुए</p>
+                <div class="cultural-elements">
+                    <span class="cultural-symbol">🕉️</span>
+                    <span class="cultural-symbol">🪔</span>
+                    <span class="cultural-symbol">🌺</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/main.js"></script>
+    <script src="/js/auth.js"></script>
+    <script src="/js/api.js"></script>
+</body>
+</html>
